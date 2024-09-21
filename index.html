@@ -5,36 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sitio de Ramiro</title>
+    <link rel="stylesheet" href="..\css\index.css">
 </head>
 
 <body>
     <header>
-        <h1>Sitio Web Profesional Ramiro</h1>
         <nav>
-            <ul>
-                <li><b><a href="index.html">Pagina principal</a></b></li>
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul class="nav-links">
+                <li><b><a href="index.html">Inicio</a></b></li>
                 <li><a href="aboutme.html">Sobre Mí</a></li>
                 <li><a href="portfolio.html">Portafolio</a></li>
-                <li><a href="resume.html">Currículum</a></li>
                 <li><a href="services.html">Servicios</a></li>
-                <li><a href="testimonials.html">Testimonios</a></li>
-                <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contacto</a></li>
-                <li><a href="socials.html">Redes sociales y Enlaces</a></li>
-                <li><a href="skills.html">Habilidades</a></li>
-                <li><a href="certifications.html">Certificaciones y Reconocimientos</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h2>¡Hola!</h2>
-        <p>Mi nombre es Ramiro. Soy un full-stack developer. Actualmente trabajo en exxonmobil.</p>
-        <p>Además, estudio en la Universidad Argentina de la empresa. En esta universidad participe de un proyecto de
-            investigación relacionado a la biotecnología y también participe en una global game jam.</p>
-        <img src="img/rami.png" alt="Foto de Rami">
+        <div class="index-container">
+            <div class="index-text-container">
+                <h2>¡Hola! Soy <span class="index-text-highlight">Rami</span></h2>
+                <p>Mi nombre es Ramiro. Soy un full-stack developer. Actualmente trabajo en exxonmobil. Además, estudio
+                    en
+                    la Universidad Argentina de la empresa.
+                </p>
+                <button class="portfolio-button">Ver mis proyectos</button>
+            </div>
+            <div class="index-image-container">
+                <img src="img/rami.png" alt="Foto de Rami" class="index-image-rami">
+            </div>
+        </div>
     </main>
     <footer>
-        <p>© 2024</p>
+        <div>
+            <img src="img/uade.png" alt="Foto de Rami" class="footer-uade" />
+        </div>
+        <p>
+            Sitio desarrollado con práctica para la
+            materia materia diseño y Desarrollo Web.
+            Copyright © 2024. Derechos Reservados.
+        </p>
     </footer>
 </body>
 

@@ -1,0 +1,138 @@
+@font-face {
+    font-family: roboto-regular;
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+
+* {
+    font-family: roboto-regular;
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    color: white;
+    font-size: 2rem;
+    gap: 5rem;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background-color: #1E375A;
+}
+
+footer {
+    display: flex;
+    background-color: #1E375A;
+    margin-top: auto;
+    color: white;
+}
+
+main {
+    margin: 6rem;
+}
+
+h2 {
+    font-size: 4em;
+    color: #1E375A;
+    margin: 0;
+}
+
+.index-container {
+    display: flex;
+    align-items: center;
+}
+
+.index-text-container {
+    flex: 1;
+    color: #1E375A;
+}
+
+.index-text-container p {
+    font-size: 1.5em;
+}
+
+.index-text-highlight {
+    color: #E45700;
+    ;
+}
+
+.index-image-container {
+    flex: 1;
+    margin-left: 300px;
+}
+
+.portfolio-button {
+    background-color: #E45700;
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    font-size: 2em;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+
+/* Hamburger Menu Icon */
+.menu-icon {
+    display: none;
+    font-size: 2.5rem;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.footer-uade {
+    width: 50px;
+    margin: 10px;
+}
+
+.index-image-rami {
+    width: 80%;
+}
+
+/* Responsive Styling for Mobile */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        background-color: #1E375A;
+        width: 100%;
+        text-align: center;
+        gap: 2rem;
+        padding: 20px 0;
+    }
+
+    .index-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .index-image-container {
+        flex: 1;
+        order: -1;
+        margin-left: 0px;
+    }
+
+    main {
+        margin: 2rem;
+    }
+}
