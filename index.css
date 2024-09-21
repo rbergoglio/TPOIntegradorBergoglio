@@ -1,11 +1,9 @@
-@font-face {
-    font-family: roboto-regular;
-    src: url('../fonts/Roboto-Regular.ttf');
-}
+@import url(https://fonts.googleapis.com/css?family=Roboto);
 
 * {
-    font-family: roboto-regular;
+    font-family: 'Roboto', regular;
 }
+
 
 
 .nav-links {
