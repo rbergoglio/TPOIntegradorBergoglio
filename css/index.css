@@ -53,6 +53,11 @@ h2 {
     margin: 0;
 }
 
+.footer-uade {
+    width: 50px;
+    margin: 10px;
+}
+
 .index-container {
     display: flex;
     align-items: center;
@@ -74,7 +79,7 @@ h2 {
 
 .index-image-container {
     flex: 1;
-    margin-left: 300px;
+    margin-left: 100px;
 }
 
 .portfolio-button {
@@ -89,7 +94,6 @@ h2 {
 }
 
 
-/* Hamburger Menu Icon */
 .menu-icon {
     display: none;
     font-size: 2.5rem;
@@ -100,16 +104,10 @@ h2 {
     top: 20px;
 }
 
-.footer-uade {
-    width: 50px;
-    margin: 10px;
-}
-
 .index-image-rami {
     width: 80%;
 }
 
-/* Responsive Styling for Mobile */
 @media (max-width: 768px) {
     .nav-links {
         flex-direction: column;
@@ -134,5 +132,10 @@ h2 {
 
     main {
         margin: 2rem;
+    }
+
+    h2 {
+        font-size: em;
+
     }
 }

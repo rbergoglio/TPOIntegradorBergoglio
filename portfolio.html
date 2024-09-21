@@ -5,47 +5,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sitio de Ramiro</title>
+    <link rel="stylesheet" href="..\css\portfolio.css">
 </head>
 
 <body>
     <header>
-        <h1>Sitio Web Profesional Ramiro</h1>
         <nav>
-            <ul>
-                <li><a href="index.html">Pagina principal</a></li>
+            <ul class="nav-links">
+                <li><b><a href="index.html">Inicio</a></b></li>
                 <li><a href="aboutme.html">Sobre Mí</a></li>
-                <li><b><a href="portfolio.html">Portafolio</a></b></li>
-                <li><a href="resume.html">Currículum</a></li>
+                <li><a href="portfolio.html">Portafolio</a></li>
                 <li><a href="services.html">Servicios</a></li>
                 <li><a href="contact.html">Contacto</a></li>
-                <li><a href="socials.html">Redes sociales y Enlaces</a></li>
-                <li><a href="skills.html">Habilidades</a></li>
-                <li><a href="certifications.html">Certificaciones y Reconocimientos</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <h2>Portafolio</h2>
         <section>
-            <h3>Global Game Jam 2021</h3>
-            <p>En 202X participé en un evento donde junto a un grupo de personas realizamos un juego. El juego trata
-                sobre
-                una diosa Griega que pierde sus pertenencias que le dan poderes y debe recuperarlas. El juego es un
-                platformer que fue desarollado con Unity y C#.</p>
-            <p>El juego se puede descargar haciendo click <a
-                    href="https://v3.globalgamejam.org/2021/games/atheneas-quest-1">acá</a></p>
-            <img src="img/atenea.png" />
+            <div class="portfolio-container">
+                <div class="portfolio-text-container">
+                    <h3>Global Game Jam 2021</h3>
+                    <p>En 202X participé en un evento donde junto a un grupo de personas realizamos un juego. El juego
+                        trata
+                        sobre
+                        una diosa Griega que pierde sus pertenencias que le dan poderes y debe recuperarlas. El juego es
+                        un
+                        platformer que fue desarollado con Unity y C#.</p>
+                    <p>El juego se puede descargar haciendo click <a
+                            href="https://v3.globalgamejam.org/2021/games/atheneas-quest-1">acá</a></p>
+
+                </div>
+                <div class="portfolio-image-container"> <img class="portfolio-image" src="img/atenea.png" />
+                </div>
+            </div>
         </section>
-        <section>
-            <h3>Portfolio en progreso</h3>
-            <p>Paralelamente a esta sitio web estoy creando una pagina web con React, Typescript y Vue para practicar
-                mis
-                habilidades de frontend.</p>
-            <img src="https://i.gyazo.com/c394640781eacaa02e741611fc56abcd.gif" alt="Image from Gyazo" width="500" />
+        <section></section>
+        <div class="portfolio-container">
+            <div class="portfolio-text-container">
+                <h3>Portfolio en progreso</h3>
+                <p>Paralelamente a esta sitio web estoy creando una pagina web con React, Typescript y Vue para
+                    practicar
+                    mis
+                    habilidades de frontend.</p>
+            </div>
+            <div class="portfolio-image-container">
+                <img class="portfolio-image" src="https://i.gyazo.com/c394640781eacaa02e741611fc56abcd.gif"
+                    alt="Image from Gyazo" width="500" />
+            </div>
+        </div>
         </section>
     </main>
     <footer>
-        <p>© 2024</p>
+        <div>
+            <img src="img/uade.png" alt="Foto de Rami" class="footer-uade" />
+        </div>
+        <p>
+            Sitio desarrollado con práctica para la
+            materia materia diseño y Desarrollo Web.
+            Copyright © 2024. Derechos Reservados.
+        </p>
     </footer>
 </body>
 

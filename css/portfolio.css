@@ -63,43 +63,37 @@ h2 {
     margin: 10px;
 }
 
-.aboutme-container {
+h3 {
+    font-size: 2em;
+    color: #1E375A;
+    margin: 0;
+}
+
+.portfolio-container {
     display: flex;
     align-items: center;
 }
 
-.aboutme-text-container {
+.portfolio-text-container {
     flex: 1;
     color: #1E375A;
 }
 
-.aboutme-text-container p {
+.portfolio-text-container p {
     font-size: 1.5em;
 }
 
-.aboutme-text-highlight {
+.portfolio-text-highlight {
     color: #E45700;
 }
 
-.aboutme-image-container {
+.portfolio-image-container {
     flex: 1;
     margin-left: 300px;
 }
 
-.aboutme-image {
+.portfolio-image {
     width: 80%;
-}
-
-.portfolio-button {
-    background-color: #E45700;
-    color: white;
-    border: none;
-    padding: 20px 40px;
-    font-size: 2em;
-    border-radius: 15px;
-    cursor: pointer;
-    margin-top: 50px;
-    text-decoration: none;
 }
 
 @media (max-width: 768px) {
@@ -112,16 +106,15 @@ h2 {
         padding: 20px 0;
     }
 
-    .aboutme-container {
+    .portfolio-container {
         display: flex;
         align-items: center;
         flex-direction: column;
     }
 
-    .aboutme-image-container {
+    .portfolio-image-container {
         flex: 1;
-        margin-left: 0px;
-        order: -1;
+        margin: 0;
     }
 
     main {
