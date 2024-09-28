@@ -4,6 +4,9 @@
     font-family: 'Roboto', regular;
 }
 
+html {
+    overflow-y: scroll;
+}
 
 .nav-links {
     list-style: none;
@@ -47,6 +50,26 @@ main {
 
 main p {
     color: #1E375A;
+}
+
+.nav-links li a.active {
+    position: relative;
+    /* Needed to position the pseudo-element */
+    display: inline-block;
+    /* Ensure the underline matches the text width */
+}
+
+
+.nav-links li a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    height: 3px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    transition: width 0.3s ease;
 }
 
 h2 {

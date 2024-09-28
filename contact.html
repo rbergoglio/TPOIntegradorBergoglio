@@ -13,31 +13,40 @@
     <header>
         <nav>
             <ul class="nav-links">
-                <li><b><a href="index.html">Inicio</a></b></li>
+                <li><a href="index.html">Inicio</a></li>
                 <li><a href="aboutme.html">Sobre Mí</a></li>
                 <li><a href="services.html">Portafolio</a></li>
                 <li><a href="services.html">Servicios</a></li>
-                <li><a href="contact.html">Contacto</a></li>
+                <li><b><a href="contact.html" class="active">Contacto</a></b></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h2>¡Contactame!</h2>
-        <form action="" method="post">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name"><br><br>
+        <div class="form-container">
+            <h2>¡Contactame!</h2>
+            <form action="" method="post">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name"><br><br>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email"><br><br>
 
-            <label for="message">Mensaje:</label><br>
-            <textarea id="message" name="message" rows="5" cols="30"></textarea><br><br>
+                <label for="message">Mensaje:</label><br>
+                <textarea id="message" name="message" rows="5" cols="30"></textarea><br><br>
 
-            <input type="submit" value="Enviar" disabled="true">
-        </form>
+                <input type="submit" value="Enviar" disabled="true">
+            </form>
+        </div>
     </main>
     <footer>
-        <p>© 2024</p>
+        <div>
+            <img src="img/uade.png" alt="Foto de Rami" class="footer-uade" />
+        </div>
+        <p>
+            Sitio desarrollado con práctica para la
+            materia materia diseño y Desarrollo Web.
+            Copyright © 2024. Derechos Reservados.
+        </p>
     </footer>
 </body>
 

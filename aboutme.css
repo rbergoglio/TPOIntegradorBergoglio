@@ -4,6 +4,10 @@
     font-family: 'Roboto', regular;
 }
 
+html {
+    overflow-y: scroll;
+}
+
 
 .nav-links {
     list-style: none;
@@ -33,6 +37,24 @@ nav {
     background-color: #1E375A;
 }
 
+.nav-links li a.active {
+    position: relative;
+    display: inline-block;
+}
+
+
+.nav-links li a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    height: 3px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    transition: width 0.3s ease;
+}
+
 footer {
     display: flex;
     background-color: #1E375A;
@@ -42,7 +64,7 @@ footer {
 
 main {
     margin: 6rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 main p {
@@ -50,7 +72,7 @@ main p {
 }
 
 h2 {
-    font-size: 4em;
+    font-size: 3.5em;
     color: #1E375A;
     margin: 0;
 }
@@ -80,23 +102,32 @@ h2 {
 
 .aboutme-image-container {
     flex: 1;
-    margin-left: 300px;
+    margin-left: 10em;
 }
+
+.aboutme-text-article {}
 
 .aboutme-image {
     width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .portfolio-button {
     background-color: #E45700;
     color: white;
     border: none;
-    padding: 20px 40px;
+    padding: 0.5em 1em;
     font-size: 2em;
     border-radius: 15px;
     cursor: pointer;
-    margin-top: 50px;
     text-decoration: none;
+}
+
+.button-container {
+    margin-bottom: 2vw;
+    margin-top: 5vw;
 }
 
 @media (max-width: 768px) {
@@ -113,20 +144,23 @@ h2 {
         display: flex;
         align-items: center;
         flex-direction: column;
+
     }
 
     .aboutme-image-container {
         flex: 1;
         margin-left: 0px;
         order: -1;
+        margin-top: 8vw;
+        margin-bottom: 8vw;
     }
 
     main {
         margin: 2rem;
     }
 
-    h2 {
-        font-size: em;
 
+    .aboutme-text-article {
+        margin-bottom: 20vw;
     }
 }

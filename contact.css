@@ -4,6 +4,9 @@
     font-family: 'Roboto', regular;
 }
 
+html {
+    overflow-y: scroll;
+}
 
 .nav-links {
     list-style: none;
@@ -41,7 +44,7 @@ footer {
 }
 
 main {
-    margin: 6rem;
+    margin: 4rem;
     margin-bottom: 4rem;
 }
 
@@ -104,8 +107,9 @@ form {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
-    margin: 0;
+    max-width: 30vw;
+    margin-top: 2em;
+    width: 100%;
 }
 
 form label {
@@ -119,7 +123,7 @@ form input[type="text"],
 form input[type="email"],
 form textarea {
     width: 100%;
-    padding: 10px;
+    padding: 0.5em;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1em;
@@ -144,6 +148,30 @@ form input[type="submit"]:hover {
     background-color: #d34500;
 }
 
+.nav-links li a.active {
+    position: relative;
+    display: inline-block;
+}
+
+
+.nav-links li a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    height: 3px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    transition: width 0.3s ease;
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
 @media (max-width: 768px) {
     .nav-links {
@@ -171,13 +199,17 @@ form input[type="submit"]:hover {
     }
 
     h2 {
-        font-size: em;
+        font-size: 2em;
 
     }
 
     form {
         padding: 30px;
         margin: 0 10px;
+        margin-top: 2em;
+        max-width: 15em;
+        margin-top: 2em;
+        width: 100%;
     }
 
     form input[type="submit"] {
