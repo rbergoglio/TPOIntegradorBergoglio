@@ -44,8 +44,7 @@ footer {
 }
 
 main {
-    margin: 6rem;
-    margin-bottom: 4rem;
+    margin: 4em 8em 4em 8em;
 }
 
 main p {
@@ -54,9 +53,7 @@ main p {
 
 .nav-links li a.active {
     position: relative;
-    /* Needed to position the pseudo-element */
     display: inline-block;
-    /* Ensure the underline matches the text width */
 }
 
 
@@ -107,20 +104,24 @@ h2 {
 }
 
 .services-image {
-    width: 60%;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contact-button {
     background-color: #E45700;
     color: white;
     border: none;
-    padding: 20px 40px;
+    padding: 0.5em 1em;
     font-size: 2em;
     border-radius: 15px;
     cursor: pointer;
-    margin-top: 50px;
     text-decoration: none;
 }
+
+
 
 @media (max-width: 768px) {
     .nav-links {
@@ -150,5 +151,18 @@ h2 {
     h2 {
         font-size: em;
 
+    }
+
+    .services-image {
+        margin-bottom: 10vw;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact-button {
+        padding: 0.5em 1em;
     }
 }
